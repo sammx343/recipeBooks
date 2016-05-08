@@ -1,0 +1,13 @@
+<template name="shoppingList">
+  <h1 class="pge-title"> Lista de Compras</h1>
+  <ul class="shopping-list">
+    {{#each shoppingList}}
+      {{#each ingredients}}
+        <li>{{name}} - <span class="amout">{{amount}}</span></li>
+      {{/each}}
+    {{else}}
+      <h3> Agrega algun item para comprar </h3>
+      <a href="/recipe-book"> Recetas</a>
+    {{/each}}
+  </ul>
+  </template>
